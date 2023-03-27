@@ -20,13 +20,13 @@ Features:
   <template>
     <script defer src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
     <holy-grail>
-      <header slot="header" style="background: #ffcdd2">Header</header>
+      <header slot="head" style="background: #ffcdd2">Head</header>
       <nav slot="top-nav" style="background: #bbdefb">Top Nav</nav>
       <main slot="main" style="background: #dcedc8">Main</main>
       <nav slot="bottom-nav" style="background: #bbdefb">Bottom Nav</nav>
       <aside slot="start-side" style="background: #e1bee7">Start Side</aside>
       <aside slot="end-side" style="background: #e1bee7">End Side</aside>
-      <footer slot="footer" style="background: #ffecb3">Footer</footer>
+      <footer slot="foot" style="background: #ffecb3">Foot</footer>
     </holy-grail>
   </template>
 </custom-element-demo>
@@ -34,13 +34,13 @@ Features:
 -->
 ```html
 <holy-grail>
-  <header slot="header">...</header>
+  <header slot="head">...</header>
   <nav slot="top-nav">...</nav>
   <main slot="main">...</main>
   <nav slot="bottom-nav">...</nav>
   <aside slot="start-side">...</aside>
   <aside slot="end-side">...</aside>
-  <footer slot="footer">...</footer>
+  <footer slot="foot">...</footer>
 </holy-grail>
 <script defer src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
 ```
@@ -78,13 +78,13 @@ The custom element `holy-grail` renders a "Holy Grail" layout in its shadow root
 
 | Name       | Description                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------|
-| header     | Topmost horizontal slot, as wide as the whole element, as high as its content.                |
+| head       | Topmost horizontal slot, as wide as the whole element, as high as its content.                |
 | top-nav    | A horizontal slot above the "main" slot, as wide as the "main" slot, as high as its content.  |
 | main       | A large slot in the middle of the element, fills the rest of width and height of the element. |
 | bottom-nav | A horizontal slot below the "main" slot, as wide as the "main" slot, as high as its content.  |
-| start-side | A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"header\" and \"footer\" slots. The width can be customised by a style using the part \"start-side\" in the selector. |
-| end-side   | A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"header\" and \"footer\" slots. The width can be customised by a style using the part \"end-side\" in the selector. |
-| footer     | Bottommost horizontal slot, as wide as the whole element, as high as its content.             |
+| start-side | A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"start-side\" in the selector. |
+| end-side   | A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"end-side\" in the selector. |
+| foot       | Bottommost horizontal slot, as wide as the whole element, as high as its content.             |
 
 #### Examples
 
@@ -92,13 +92,13 @@ All slots populated, screen wider than 767px, see [the source](example/complete.
 
 ```html
 <holy-grail>
-  <header slot="header">...</header>
+  <header slot="head">...</header>
   <nav slot="top-nav">...</nav>
   <main slot="main">...</main>
   <nav slot="bottom-nav">...</nav>
   <aside slot="start-side">...</aside>
   <aside slot="end-side">...</aside>
-  <footer slot="footer">...</footer>
+  <footer slot="foot">...</footer>
 </holy-grail>
 ```
 
@@ -116,7 +116,7 @@ Only some slots populated, screen wider than 767px, see [the source](example/par
 
 ```html
 <holy-grail>
-  <header slot="header">...</header>
+  <header slot="head">...</header>
   <nav slot="top-nav">...</nav>
   <main slot="main">...</main>
   <nav slot="bottom-nav">...</nav>
