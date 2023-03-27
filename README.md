@@ -86,6 +86,24 @@ The custom element `holy-grail` renders a "Holy Grail" layout in its shadow root
 | end-side   | A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"end-side\" in the selector. |
 | foot       | Bottommost horizontal slot, as wide as the whole element, as high as its content.             |
 
+### Styles
+
+CSS variables `--holy-grail-start-side-width` and `--holy-grail-end-side-width` can be used to set the widths of the slots `start-side` and `end-side`. The default values are `25%`.
+
+```css
+holy-grail {
+  --holy-grail-start-side-width: 33%;
+}
+```
+
+Parts `main`, `start-side` and `end-side` can be used for advanced styling of the stretchable slots of the layout:
+
+```css
+holy-grail::part(start-side) {
+  width: 33%;
+}
+```
+
 #### Examples
 
 All slots populated, screen wider than 767px, see [the source](example/complete.html):

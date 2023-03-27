@@ -20,12 +20,6 @@ holy-grail > * {
   padding: 5px;
 }
 
-/* main, aside {
-  height: fill-available;
-  height: -moz-available;
-  height: -webkit-fill-available;
-} */
-
 header {
   background: #ffcdd2;
 }
@@ -38,15 +32,11 @@ nav {
   background: #bbdefb;
 }
 
-aside,
-/* workaround for the behaviour of details/summary */
 holy-grail::part(start-side),
 holy-grail::part(end-side) {
   background: #e1bee7;
 }
 
-main,
-/* workaround for the behaviour of details/summary */
 holy-grail::part(main) {
   background: #dcedc8;
 }

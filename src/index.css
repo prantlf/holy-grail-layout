@@ -42,10 +42,13 @@
   }
 
   #start-side,
+  #start-side.half {
+    flex-basis: var(--holy-grail-start-side-width, 25%);
+  }
+
   #end-side,
-  #start-side.half,
   #end-side.half {
-    flex-basis: 25%;
+    flex-basis: var(--holy-grail-end-side-width, 25%);
   }
 
   #start-side {
