@@ -18,7 +18,7 @@ Features:
 ```
 <custom-element-demo>
   <template>
-    <script defer src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
+    <script defer src=https://unpkg.com/holy-grail-layout@2.0.0/dist/index.min.js></script>
     <holy-grail>
       <header slot="head" style="background: #ffcdd2">Head</header>
       <nav slot="nav-top" style="background: #bbdefb">Top Nav</nav>
@@ -42,7 +42,7 @@ Features:
   <aside slot="side-end">...</aside>
   <footer slot="foot">...</footer>
 </holy-grail>
-<script defer src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
+<script defer src=https://unpkg.com/holy-grail-layout@2.0.0/dist/index.min.js></script>
 ```
 
 ![Complete Layout](doc/complete-collapsed.png)
@@ -60,7 +60,7 @@ pnpm i holy-grail-layout
 If you write a plain HTML page, insert the `holy-grail-layout` script pointing either to CDN or to the local filesystem:
 
 ```html
-<script src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
+<script src=https://unpkg.com/holy-grail-layout@2.0.0/dist/index.min.js></script>
 <script src=node_modules/holy-grail-layout/dist/index.min.js></script>
 ```
 
