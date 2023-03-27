@@ -10,7 +10,7 @@
           "description": "Topmost horizontal slot, as wide as the whole element, as high as its content."
         },
         {
-          "name": "top-nav",
+          "name": "nav-top",
           "description": "A horizontal slot above the \"main\" slot, as wide as the \"main\" slot, as high as its content."
         },
         {
@@ -18,16 +18,16 @@
           "description": "A large slot in the middle of the element, fills the rest of width and height of the element."
         },
         {
-          "name": "bottom-nav",
+          "name": "nav-bottom",
           "description": "A horizontal slot below the \"main\" slot, as wide as the \"main\" slot, as high as its content."
         },
         {
-          "name": "start-side",
-          "description": "A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"start-side\" in the selector."
+          "name": "side-start",
+          "description": "A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-start\" in the selector."
         },
         {
-          "name": "end-side",
-          "description": "A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"end-side\" in the selector."
+          "name": "side-end",
+          "description": "A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-end\" in the selector."
         },
         {
           "name": "foot",

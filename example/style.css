@@ -32,8 +32,8 @@ nav {
   background: #bbdefb;
 }
 
-holy-grail::part(start-side),
-holy-grail::part(end-side) {
+holy-grail::part(side-start),
+holy-grail::part(side-end) {
   background: #e1bee7;
 }
 

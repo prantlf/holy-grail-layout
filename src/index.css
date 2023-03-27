@@ -12,13 +12,13 @@
   }
 
   #content,
-  #start-side,
-  #end-side {
+  #side-start,
+  #side-end {
     flex-basis: 100%;
   }
 
-  #start-side.half,
-  #end-side.half {
+  #side-start.half,
+  #side-end.half {
     flex-basis: 50%;
   }
 }
@@ -36,22 +36,22 @@
   }
 
   #main,
-  #start-side,
-  #end-side {
+  #side-start,
+  #side-end {
     overflow: auto;
   }
 
-  #start-side,
-  #start-side.half {
-    flex-basis: var(--holy-grail-start-side-width, 25%);
+  #side-start,
+  #side-start.half {
+    flex-basis: var(--holy-grail-side-start-width, 25%);
   }
 
-  #end-side,
-  #end-side.half {
-    flex-basis: var(--holy-grail-end-side-width, 25%);
+  #side-end,
+  #side-end.half {
+    flex-basis: var(--holy-grail-side-end-width, 25%);
   }
 
-  #start-side {
+  #side-start {
     order: -1;
   }
 }

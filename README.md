@@ -21,11 +21,11 @@ Features:
     <script defer src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
     <holy-grail>
       <header slot="head" style="background: #ffcdd2">Head</header>
-      <nav slot="top-nav" style="background: #bbdefb">Top Nav</nav>
+      <nav slot="nav-top" style="background: #bbdefb">Top Nav</nav>
       <main slot="main" style="background: #dcedc8">Main</main>
-      <nav slot="bottom-nav" style="background: #bbdefb">Bottom Nav</nav>
-      <aside slot="start-side" style="background: #e1bee7">Start Side</aside>
-      <aside slot="end-side" style="background: #e1bee7">End Side</aside>
+      <nav slot="nav-bottom" style="background: #bbdefb">Bottom Nav</nav>
+      <aside slot="side-start" style="background: #e1bee7">Start Side</aside>
+      <aside slot="side-end" style="background: #e1bee7">End Side</aside>
       <footer slot="foot" style="background: #ffecb3">Foot</footer>
     </holy-grail>
   </template>
@@ -35,11 +35,11 @@ Features:
 ```html
 <holy-grail>
   <header slot="head">...</header>
-  <nav slot="top-nav">...</nav>
+  <nav slot="nav-top">...</nav>
   <main slot="main">...</main>
-  <nav slot="bottom-nav">...</nav>
-  <aside slot="start-side">...</aside>
-  <aside slot="end-side">...</aside>
+  <nav slot="nav-bottom">...</nav>
+  <aside slot="side-start">...</aside>
+  <aside slot="side-end">...</aside>
   <footer slot="foot">...</footer>
 </holy-grail>
 <script defer src=https://unpkg.com/holy-grail-layout@1.0.0/dist/index.min.js></script>
@@ -79,27 +79,27 @@ The custom element `holy-grail` renders a "Holy Grail" layout in its shadow root
 | Name       | Description                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------|
 | head       | Topmost horizontal slot, as wide as the whole element, as high as its content.                |
-| top-nav    | A horizontal slot above the "main" slot, as wide as the "main" slot, as high as its content.  |
+| nav-top    | A horizontal slot above the "main" slot, as wide as the "main" slot, as high as its content.  |
 | main       | A large slot in the middle of the element, fills the rest of width and height of the element. |
-| bottom-nav | A horizontal slot below the "main" slot, as wide as the "main" slot, as high as its content.  |
-| start-side | A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"start-side\" in the selector. |
-| end-side   | A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"end-side\" in the selector. |
+| nav-bottom | A horizontal slot below the "main" slot, as wide as the "main" slot, as high as its content.  |
+| side-start | A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-start\" in the selector. |
+| side-end   | A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-end\" in the selector. |
 | foot       | Bottommost horizontal slot, as wide as the whole element, as high as its content.             |
 
 ### Styles
 
-CSS variables `--holy-grail-start-side-width` and `--holy-grail-end-side-width` can be used to set the widths of the slots `start-side` and `end-side`. The default values are `25%`.
+CSS variables `--holy-grail-side-start-width` and `--holy-grail-side-end-width` can be used to set the widths of the slots `side-start` and `side-end`. The default values are `25%`.
 
 ```css
 holy-grail {
-  --holy-grail-start-side-width: 33%;
+  --holy-grail-side-start-width: 33%;
 }
 ```
 
-Parts `main`, `start-side` and `end-side` can be used for advanced styling of the stretchable slots of the layout:
+Parts `main`, `side-start` and `side-end` can be used for advanced styling of the stretchable slots of the layout:
 
 ```css
-holy-grail::part(start-side) {
+holy-grail::part(side-start) {
   width: 33%;
 }
 ```
@@ -111,11 +111,11 @@ All slots populated, screen wider than 767px, see [the source](example/complete.
 ```html
 <holy-grail>
   <header slot="head">...</header>
-  <nav slot="top-nav">...</nav>
+  <nav slot="nav-top">...</nav>
   <main slot="main">...</main>
-  <nav slot="bottom-nav">...</nav>
-  <aside slot="start-side">...</aside>
-  <aside slot="end-side">...</aside>
+  <nav slot="nav-bottom">...</nav>
+  <aside slot="side-start">...</aside>
+  <aside slot="side-end">...</aside>
   <footer slot="foot">...</footer>
 </holy-grail>
 ```
@@ -135,10 +135,10 @@ Only some slots populated, screen wider than 767px, see [the source](example/par
 ```html
 <holy-grail>
   <header slot="head">...</header>
-  <nav slot="top-nav">...</nav>
+  <nav slot="nav-top">...</nav>
   <main slot="main">...</main>
-  <nav slot="bottom-nav">...</nav>
-  <aside slot="start-side">...</aside>
+  <nav slot="nav-bottom">...</nav>
+  <aside slot="side-start">...</aside>
 </holy-grail>
 ```
 
