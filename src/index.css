@@ -1,0 +1,58 @@
+:host,
+#body,
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  #body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #content,
+  #start-side,
+  #end-side {
+    flex-basis: 100%;
+  }
+
+  #start-side.half,
+  #end-side.half {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #body {
+    min-height: 0;
+    flex-wrap: nowrap;
+  }
+
+  #body,
+  #content,
+  #main {
+    flex: 1;
+  }
+
+  #main,
+  #start-side,
+  #end-side {
+    overflow: auto;
+  }
+
+  #start-side,
+  #end-side,
+  #start-side.half,
+  #end-side.half {
+    flex-basis: 25%;
+  }
+
+  #start-side {
+    order: -1;
+  }
+}
+
+.hidden {
+  display: none;
+}

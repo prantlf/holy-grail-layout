@@ -1,0 +1,52 @@
+body {
+  height: calc(100vh - 10px);
+  padding: 5px;
+  margin: 0;
+
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: serif;
+  text-transform: none;
+}
+
+holy-grail {
+  height: 100%;
+}
+
+holy-grail > * {
+  padding: 5px;
+}
+
+/* main, aside {
+  height: fill-available;
+  height: -moz-available;
+  height: -webkit-fill-available;
+} */
+
+header {
+  background: #ffcdd2;
+}
+
+footer {
+  background: #ffecb3;
+}
+
+nav {
+  background: #bbdefb;
+}
+
+aside,
+/* workaround for the behaviour of details/summary */
+holy-grail::part(start-side),
+holy-grail::part(end-side) {
+  background: #e1bee7;
+}
+
+main,
+/* workaround for the behaviour of details/summary */
+holy-grail::part(main) {
+  background: #dcedc8;
+}

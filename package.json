@@ -1,0 +1,91 @@
+{
+  "name": "holy-grail-layout",
+  "version": "1.0.0",
+  "description": "Provides an extended \"Holy Grail\" layout as a web component.",
+  "author": {
+    "name": "Ferdinand Prantl",
+    "email": "prantlf@gmail.com",
+    "url": "http://prantl.tk"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/date-and-time-formatter/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/prantlf/holy-grail-layout#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/holy-grail-layout.git"
+  },
+  "bugs": "https://github.com/prantlf/holy-grail-layout/issues",
+  "engines": {
+    "node": ">=16.14"
+  },
+  "type": "module",
+  "browser": "dist/index.min.js",
+  "module": "dist/index.min.js",
+  "customElements": "dist/custom-elements.json",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c && cp-j src/*.json dist",
+    "watch": "rollup -cw",
+    "start": "python3 -m http.server",
+    "test": "denolint && jsonlint -DjklnR src/*.json",
+    "fix": "jsonlint -DilnR src/*.json"
+  },
+  "c8": {
+    "100": true,
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "failComment": false
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  },
+  "devDependencies": {
+    "@prantlf/jsonlint": "14.0.2",
+    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-typescript": "11.0.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@unixcompat/cp.js": "3.0.0",
+    "bacom": "1.0.0",
+    "c8": "7.13.0",
+    "denolint": "2.0.7",
+    "rollup": "3.20.2",
+    "rollup-plugin-sourcemaps": "0.6.3",
+    "rollup-plugin-swc-minify": "1.0.5",
+    "tslib": "2.5.0",
+    "typescript": "5.0.2"
+  },
+  "keywords": [
+    "holy-grail",
+    "holygrail",
+    "holy-grail-layout",
+    "holygrail-layout",
+    "layout",
+    "webcomponent",
+    "web-component",
+    "custom-element",
+    "html-element",
+    "element",
+    "html"
+  ]
+}
