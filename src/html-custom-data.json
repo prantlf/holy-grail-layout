@@ -3,11 +3,11 @@
   "tags": [
     {
       "name": "holy-grail",
-      "description": "Provides an extended \"Holy Grail\" layout as a web component.",
+      "description": "Provides an extended \"Holy Grail\" layout as a web component.\n\nAttributes:\n * size\n\nSlots:\n * head\n * nav-top\n * main\n * nav-bottom\n * side-start\n * size-end\n * foot",
       "attributes": [
         {
           "name": "size",
-          "description": "`size` {`string`} - \n\nProperty: size\n\nDefault: `null`\n\nDisables the responsive behaviour by forcing the width to be detected as \"small\", \"medium\" or \"large\".",
+          "description": "`size` {`string`} - \n\nProperty: size\n\nValues: `'small' | 'medium' | 'large'`\n\nDefault: `null`\n\nDisables the responsive behaviour by forcing the width to be detected as \"small\", \"medium\" or \"large\".",
           "valueSet": "sizes",
           "references": [
             {
