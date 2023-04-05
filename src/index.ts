@@ -6,14 +6,14 @@ import style from './index.css'
 // eslint-disable-next-line no-unused-vars
 class HolyGrailElement extends HTMLElement {
   @elem()
-  private startSide: HTMLElement
+  private sideStart: HTMLElement
 
   @elem()
-  private endSide: HTMLElement
+  private sideEnd: HTMLElement
 
   @event()
   onSlotChange({ target }: { target: HTMLSlotElement }): void {
-    if (target.name.endsWith('-side')) this.#toggleSlot(target)
+    if (target.name.startsWith('side-')) this.#toggleSlot(target)
   }
 
   #toggleSlot(slot: HTMLSlotElement): void {
@@ -21,9 +21,9 @@ class HolyGrailElement extends HTMLElement {
     const children = slot.assignedNodes()
     slot.parentElement.classList[children.length ? 'remove' : 'add']('hidden')
     // Half the sides if they are both present
-    const sideSlots = this.querySelectorAll('[slot*=-side]')
+    const sideSlots = this.querySelectorAll('[slot|=side]')
     const method = sideSlots.length === 2 ? 'add' : 'remove'
-    this.startSide.classList[method]('half')
-    this.endSide.classList[method]('half')
+    this.sideStart.classList[method]('half')
+    this.sideEnd.classList[method]('half')
   }
 }
