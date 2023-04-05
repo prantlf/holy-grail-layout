@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/prantlf/holy-grail-layout/compare/v2.0.1...v2.1.0) (2023-04-05)
+
+
+### Bug Fixes
+
+* Fix the link to the documentation in IntelliSense ([a69aef4](https://github.com/prantlf/holy-grail-layout/commit/a69aef41cc6e33304bedcfe5bd293d4ce686187c))
+
+
+### Features
+
+* Introduce the size attribute to suppress the responsiveness ([7c79702](https://github.com/prantlf/holy-grail-layout/commit/7c79702466548bd83efbe04a841dcf4deb835312))
+
 ## [2.0.1](https://github.com/prantlf/holy-grail-layout/compare/v2.0.0...v2.0.1) (2023-04-05)
 
 
