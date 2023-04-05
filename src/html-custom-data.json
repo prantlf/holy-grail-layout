@@ -4,6 +4,19 @@
     {
       "name": "holy-grail",
       "description": "Provides an extended \"Holy Grail\" layout as a web component.",
+      "attributes": [
+        {
+          "name": "size",
+          "description": "`size` {`string`} - \n\nProperty: size\n\nDefault: `null`\n\nDisables the responsive behaviour by forcing the width to be detected as \"small\", \"medium\" or \"large\".",
+          "valueSet": "sizes",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#attributes"
+            }
+          ]
+        }
+      ],
       "slots": [
         {
           "name": "head",
@@ -85,5 +98,41 @@
     }
   ],
   "globalAttributes": [],
-  "valueSets": []
+  "valueSets": [
+    {
+      "name": "sizes",
+      "values": [
+        {
+          "name": "small",
+          "description": "Force the responsive behaviour as if the screen width were \"small\" - narrower than 480px.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#attributes"
+            }
+          ]
+        },
+        {
+          "name": "medium",
+          "description": "Force the responsive behaviour as if the screen width were \"medium\" - wider than 479px and narrower than 768px.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#attributes"
+            }
+          ]
+        },
+        {
+          "name": "large",
+          "description": "Force the responsive behaviour as if the screen width were \"large\" - wider than 767px.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#attributes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

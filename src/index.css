@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 480px) {
-  #body {
+  :host(:not([size])) #body {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -17,43 +17,91 @@
     flex-basis: 100%;
   }
 
-  #side-start.half,
-  #side-end.half {
+  :host(:not([size])) #side-start.half,
+  :host(:not([size])) #side-end.half {
     flex-basis: 50%;
   }
 }
 
+:host([size~=medium]) #body,
+:host([size~=large]) #body {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+:host([size~=medium]) #content,
+:host([size~=medium]) #side-start,
+:host([size~=medium]) #side-end {
+  flex-basis: 100%;
+}
+
+:host([size~=medium]) #side-start.half,
+:host([size~=medium]) #side-end.half {
+  flex-basis: 50%;
+}
+
 @media (min-width: 768px) {
-  #body {
+  :host(:not([size])) #body {
     min-height: 0;
     flex-wrap: nowrap;
   }
 
-  #body,
-  #content,
-  #main {
+  :host(:not([size])) #body,
+  :host(:not([size])) #content,
+  :host(:not([size])) #main {
     flex: 1;
   }
 
-  #main,
-  #side-start,
-  #side-end {
-    overflow: auto;
+  :host(:not([size])) #main,
+  :host(:not([size])) #side-start,
+  :host(:not([size])) #side-end {
+    overflow-y: auto;
   }
 
-  #side-start,
-  #side-start.half {
+  :host(:not([size])) #side-start,
+  :host(:not([size])) #side-start.half {
     flex-basis: var(--holy-grail-side-start-width, 25%);
   }
 
-  #side-end,
-  #side-end.half {
+  :host(:not([size])) #side-end,
+  :host(:not([size])) #side-end.half {
     flex-basis: var(--holy-grail-side-end-width, 25%);
   }
 
-  #side-start {
+  :host(:not([size])) #side-start {
     order: -1;
   }
+}
+
+:host([size~=large]) #body {
+  min-height: 0;
+  flex-wrap: nowrap;
+}
+
+:host([size~=large]) #body,
+:host([size~=large]) #content,
+:host([size~=large]) #main {
+  flex: 1;
+}
+
+:host([size~=large]) #main,
+:host([size~=large]) #side-start,
+:host([size~=large]) #side-end {
+  overflow-y: auto;
+}
+
+:host([size~=large]) #side-start,
+:host([size~=large]) #side-start.half {
+  flex-basis: var(--holy-grail-side-start-width, 25%);
+}
+
+:host([size~=large]) #side-end,
+:host([size~=large]) #side-end.half {
+  flex-basis: var(--holy-grail-side-end-width, 25%);
+}
+
+:host([size~=large]) #side-start {
+  order: -1;
 }
 
 .hidden {

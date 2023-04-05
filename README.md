@@ -74,6 +74,14 @@ The custom element `holy-grail` renders a "Holy Grail" layout in its shadow root
 <holy-grail>...</holy-grail>
 ```
 
+#### Attributes
+
+| Name | Type   | Description                                                                                            |
+|------|--------|--------------------------------------------------------------------------------------------------------|
+| size | string | Disables the responsive behaviour by forcing the screen width to be detected as `small`, `medium` or `large`. |
+
+The width breakpoint between `small` and `medium` sizes is `480px`. The width breakpoint between `medium` and `large` sizes is `768px`.
+
 #### Slots
 
 | Name       | Description                                                                                   |

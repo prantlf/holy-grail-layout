@@ -1,10 +1,13 @@
-import { comp, elem, event } from 'bacom'
+import { comp, elem, event, prop } from 'bacom'
 import template from './index.html'
 import style from './index.css'
 
 @comp({ tag: 'holy-grail', styles: [style], template })
 // eslint-disable-next-line no-unused-vars
 class HolyGrailElement extends HTMLElement {
+  @prop({ type: 'string' })
+  size: 'small' | 'medium' | 'large'
+
   @elem()
   private sideStart: HTMLElement
 

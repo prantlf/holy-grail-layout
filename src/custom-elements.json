@@ -10,6 +10,31 @@
           "kind": "class",
           "name": "HolyGrailElement",
           "description": "Provides an extended \"Holy Grail\" layout as a web component.",
+          "members": [
+            {
+              "kind": "field",
+              "name": "size",
+              "description": "Disables the responsive behaviour by forcing the width to be detected as \"small\", \"medium\" or \"large\".",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "size",
+              "reflects": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "size",
+              "description": "Disables the responsive behaviour by forcing the width to be detected as \"small\", \"medium\" or \"large\".",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "size"
+            }
+          ],
           "slots": [
             {
               "name": "head",
