@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/prantlf/holy-grail-layout/compare/v2.0.0...v2.0.1) (2023-04-05)
+
+
+### Bug Fixes
+
+* Fix hidden sides after slot renaming ([f359cbf](https://github.com/prantlf/holy-grail-layout/commit/f359cbf3970937181b1ddd274da1d25a1f321c27))
+
 # [2.0.0](https://github.com/prantlf/holy-grail-layout/compare/v1.0.0...v2.0.0) (2023-03-27)
 
 
