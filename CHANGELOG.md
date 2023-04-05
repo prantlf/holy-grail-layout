@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/prantlf/holy-grail-layout/compare/v2.1.0...v2.1.1) (2023-04-05)
+
+
+### Bug Fixes
+
+* Add summary with attributes and slots to IntelliSense ([182c804](https://github.com/prantlf/holy-grail-layout/commit/182c804ac5abb551ddbd617c24467824dab6f83d))
+
 # [2.1.0](https://github.com/prantlf/holy-grail-layout/compare/v2.0.1...v2.1.0) (2023-04-05)
 
 
