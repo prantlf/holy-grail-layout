@@ -7,31 +7,73 @@
       "slots": [
         {
           "name": "head",
-          "description": "Topmost horizontal slot, as wide as the whole element, as high as its content."
+          "description": "Topmost horizontal slot, as wide as the whole element, as high as its content.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         },
         {
           "name": "nav-top",
-          "description": "A horizontal slot above the \"main\" slot, as wide as the \"main\" slot, as high as its content."
+          "description": "A horizontal slot above the \"main\" slot, as wide as the \"main\" slot, as high as its content.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         },
         {
           "name": "main",
-          "description": "A large slot in the middle of the element, fills the rest of width and height of the element."
+          "description": "A large slot in the middle of the element, fills the rest of width and height of the element.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         },
         {
           "name": "nav-bottom",
-          "description": "A horizontal slot below the \"main\" slot, as wide as the \"main\" slot, as high as its content."
+          "description": "A horizontal slot below the \"main\" slot, as wide as the \"main\" slot, as high as its content.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         },
         {
           "name": "side-start",
-          "description": "A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-start\" in the selector."
+          "description": "A vertical slot on the left side(in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-start\" in the selector.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         },
         {
           "name": "side-end",
-          "description": "A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-end\" in the selector."
+          "description": "A vertical slot on the right side (in the left-to-right text-writing direction) with an explicit width (25% of the element by default), as high as the content between the \"head\" and \"foot\" slots. The width can be customised by a style using the part \"side-end\" in the selector.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         },
         {
           "name": "foot",
-          "description": "Bottommost horizontal slot, as wide as the whole element, as high as its content."
+          "description": "Bottommost horizontal slot, as wide as the whole element, as high as its content.",
+          "references": [
+            {
+              "name": "Documentation",
+              "url": "https://github.com/prantlf/holy-grail-layout#slots"
+            }
+          ]
         }
       ],
       "references": [
